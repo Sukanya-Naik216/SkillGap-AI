@@ -1,0 +1,32 @@
+Priya Sharma
+Email: priya.sharma@example.com | Phone: +91 98765 43210
+LinkedIn: linkedin.com/in/priyasharma | GitHub: github.com/priyasharma
+
+Summary
+Python data analyst and machine learning engineer with 4 years of experience building analytics dashboards, predictive models, and automated reporting workflows. Strong background in SQL, Pandas, NumPy, scikit-learn, Tableau, communication, and stakeholder management.
+
+Technical Skills
+Python, SQL, Pandas, NumPy, scikit-learn, Machine Learning, Data Analysis, Data Visualization, Tableau, Excel, Git, Flask, REST APIs, Unit Testing, Pytest
+
+Experience
+Data Analyst, FinSight Analytics
+- Built Python and SQL pipelines that reduced monthly reporting effort by 45 percent.
+- Developed Tableau dashboards for revenue, customer churn, and product adoption metrics.
+- Implemented scikit-learn churn models and improved recall by 18 percent through feature engineering.
+- Partnered with product and sales stakeholders to translate business questions into analytical deliverables.
+
+Machine Learning Intern, HealthMetric Labs
+- Created Pandas workflows to clean and validate clinical operations datasets.
+- Built Flask APIs for internal model demos and documented deployment steps for engineers.
+- Presented findings to non-technical audiences and improved decision turnaround time.
+
+Projects
+Customer Churn Prediction
+- Trained logistic regression and random forest models with scikit-learn.
+- Published model evaluation, data dictionary, and reproducible notebooks on GitHub.
+
+Education
+B.Tech in Computer Science, Pune University
+
+Certifications
+Google Data Analytics Professional Certificate

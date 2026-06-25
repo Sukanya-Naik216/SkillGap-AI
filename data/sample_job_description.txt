@@ -1,0 +1,22 @@
+Senior AI Data Scientist
+
+We are hiring a Senior AI Data Scientist to build production-ready machine learning and generative AI solutions for customer intelligence products. The role requires strong Python, SQL, machine learning, statistics, NLP, and data visualization experience.
+
+Responsibilities
+- Design and evaluate machine learning models for churn prediction, personalization, and customer segmentation.
+- Build NLP and generative AI prototypes using LLMs, prompt engineering, and retrieval augmented generation.
+- Create production APIs with FastAPI and collaborate with engineering teams on deployment.
+- Use Docker, GitHub Actions, and CI/CD practices to ship reliable analytics services.
+- Communicate model performance, business impact, and tradeoffs to stakeholders.
+
+Required Skills
+- Python, SQL, Pandas, NumPy, scikit-learn, Machine Learning, Statistics
+- NLP, Generative AI, LLM, Prompt Engineering, RAG
+- FastAPI, Docker, GitHub Actions, CI/CD
+- Data Visualization, Tableau or Power BI
+- Communication, stakeholder management, problem solving, collaboration
+
+Preferred Skills
+- AWS or Google Cloud
+- Pytest and unit testing
+- Experience mentoring junior analysts or data scientists
