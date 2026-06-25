@@ -366,11 +366,10 @@ def render_page_links(page_files: list[str]) -> None:
     """Render compact cross-page links for empty states and next steps."""
     for page_file, label, icon in PAGE_LINKS:
         if page_file in page_files:
-            try:
-                st.page_link(page_file, label=label, icon=icon)
-            except KeyError:
-                # Streamlit's direct page test harness lacks router metadata.
-                st.markdown(f"**{label}**")
+            def render_page_links(page_files: list[str]) -> None:
+    for page_file, label, icon in PAGE_LINKS:
+        if page_file in page_files:
+            st.page_link(page_file, label=label, icon=icon)
 
 
 def clear_analysis() -> None:
@@ -397,6 +396,7 @@ def _file_signature(uploaded_file: Any) -> str:
 
 def _store_text(kind: str, text: str, filename: str, source: str) -> None:
     normalized = normalize_whitespace(text)
+
     text_key = f"{kind}_text" if kind == "resume" else "job_description_text"
     filename_key = f"{kind}_filename" if kind == "resume" else "job_description_filename"
     source_key = f"{kind}_source" if kind == "resume" else "job_description_source"
