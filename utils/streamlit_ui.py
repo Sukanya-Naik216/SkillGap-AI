@@ -52,16 +52,16 @@ def configure_app(page_title: str = "SkillGap AI", page_icon: str = "SG") -> Non
 
 
 def prepare_page(title: str, subtitle: str | None = None, page_icon: str = "SG") -> None:
-    """Apply shared state, theme, navigation, and page heading for page scripts."""
-    configure_app(page_title=title, page_icon=page_icon)
-    render_sidebar_navigation()
+    """Apply shared state, theme, and page heading for page scripts."""
+    initialize_session_state()
+    apply_dark_theme()
+    render_sidebar_page_links()
     render_sidebar_status()
     render_page_header(title, subtitle)
 
 
-def render_sidebar_navigation() -> None:
-    """Render the persistent sidebar navigation links for the multi-page app."""
-    st.sidebar.title("SkillGap AI")
+def render_sidebar_page_links() -> None:
+    """Render the primary page navigation links in the sidebar."""
     st.sidebar.markdown("### Navigation")
     for page_file, label, icon in PAGE_LINKS:
         try:
@@ -366,10 +366,10 @@ def render_page_links(page_files: list[str]) -> None:
     """Render compact cross-page links for empty states and next steps."""
     for page_file, label, icon in PAGE_LINKS:
         if page_file in page_files:
-            def render_page_links(page_files: list[str]) -> None:
-    for page_file, label, icon in PAGE_LINKS:
-        if page_file in page_files:
-            st.page_link(page_file, label=label, icon=icon)
+            try:
+                st.page_link(page_file, label=label, icon=icon)
+            except Exception:
+                st.markdown(f"**{label}**")
 
 
 def clear_analysis() -> None:
